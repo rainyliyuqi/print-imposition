@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "print-imposition"
+version = "0.1.0"
+description = "印刷包装拼版 CLI 工具 — 盒型计算、拼版排布、用纸优化"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Seany Li"},
+]
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/seanyli/print-imposition"
+Repository = "https://github.com/seanyli/print-imposition"
+
+[project.scripts]
+pi = "imposition.cli:cli"
